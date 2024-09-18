@@ -29,7 +29,7 @@ document.getElementById('add-button').addEventListener('click',function(event){
 
 // cash out
 
-let dis=9400;
+
 document.getElementById('cashout-button').addEventListener('click',function(event){
    
     event.preventDefault();
@@ -42,7 +42,7 @@ document.getElementById('cashout-button').addEventListener('click',function(even
 
    if(PinButton==='123')
    {
-    dis=dis-AmountField;
+    sum=sum-AmountField;
     TakaButton.innerText=dis;
 
    }
