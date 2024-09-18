@@ -37,8 +37,8 @@
               <!-- user action button -->
                <div>
 
-                <button class="btn btn-lg">Add Money</button>
-                <button class="btn btn-lg">Cash Out</button>
+                <button id="show-cashin" class="btn btn-lg">Add Money</button>
+                <button id="show-cashout" class="btn btn-lg">Cash Out</button>
                 
 
                </div>
@@ -47,10 +47,13 @@
                
                <!-- from start -->
 
+               <div id="cashin-section" class="">
+
+                
                <form class="card-body">
                 <div class="form-control">
                   <label class="label">
-                    <span class="label-text">Amount</span>
+                    <span class="label-text">Cash In Amount</span>
                   </label>
                   <input id="amount-field" type="text" placeholder="Amount " class="input input-bordered" required />
                 </div>
@@ -65,8 +68,34 @@
                   <button id="add-button" class="btn btn-primary">Add Money</button>
                 </div>
               </form>
+               </div>
 
                <!-- from end -->
+
+               <!-- cashout start  -->
+
+               <div id="cashout-section" class="hidden">
+                
+               <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Cash Out Amount</span>
+                  </label>
+                  <input id="cashout-amount-field" type="text" placeholder="Amount " class="input input-bordered" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span  class="label-text">Pin</span>
+                  </label>
+                  <input id="cashout-pin-button" type="password" placeholder="Pin" class="input input-bordered" required />
+                 
+                </div>
+                <div class="form-control mt-6">
+                  <button id="cashout-button" class="btn btn-primary">Cash Out</button>
+                </div>
+              </form>
+               </div>
+                <!-- cash out end -->
 
         </div>
 
